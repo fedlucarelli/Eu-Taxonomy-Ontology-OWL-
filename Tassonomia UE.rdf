@@ -1,0 +1,1090 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization/"
+     xml:base="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#compliesWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#compliesWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MinimumSafeguard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TechnicalScreeningCriteria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#isClassifiedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#isClassifiedAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#respectsDNSHWithRespectTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#respectsDNSHWithRespectTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ActivityType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ActivityType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ArtsSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ArtsSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#BiodiversityProtectionAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#BiodiversityProtectionAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ProtectionAndRestorationOfBiodiversityAndEcosystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeAdaptation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeAdaptation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateResilienceIncrease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateResilienceIncrease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#DisasterRiskManagementSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EducationSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SocialWorkSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeAdaptation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#DisasterRiskManagementSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#DisasterRiskManagementSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EcosystemRestorationAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EcosystemRestorationAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EducationSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EducationSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnablingActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnablingActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ActivityType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergyEfficiencyImprovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergyEfficiencyImprovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EngineeringSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnablingActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EngineeringSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EngineeringSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EntertainmentSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EntertainmentSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#FinanceSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#FinanceSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ProtectionAndRestorationOfBiodiversityAndEcosystems"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#GHGEmissionAvoidance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#GHGEmissionAvoidance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#GHGEmissionReduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#GHGEmissionReduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#GHGEmissionRemoval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#GHGEmissionRemoval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ForestrySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#HumanHealthSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#HumanHealthSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#HumanRightsSafeguard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#HumanRightsSafeguard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MinimumSafeguard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ICTSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ICTSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#LabourRightsSafeguard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#LabourRightsSafeguard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MinimumSafeguard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManufactureOfLowCarbonTechnologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManufactureOfLowCarbonTechnologies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EngineeringSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnablingActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MarineResourceProtection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MarineResourceProtection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#DisasterRiskManagementSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WaterSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SustainableUseAndProtectionOfWaterAndMarineResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MinimumSafeguard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#MinimumSafeguard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ActivityType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionEmissionReduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionEmissionReduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPrevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPrevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ConstructionSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ProtectionAndRestorationOfBiodiversityAndEcosystems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ProtectionAndRestorationOfBiodiversityAndEcosystems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#RenowableEnergyDistribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#RenowableEnergyDistribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#RenowableEnergyProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#RenowableEnergyProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#RenowableEnergyStorage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#RenowableEnergyStorage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnergySector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ClimateChangeMitigation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SocialWorkSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SocialWorkSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SustainableUseAndProtectionOfWaterAndMarineResources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SustainableUseAndProtectionOfWaterAndMarineResources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignedActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignedActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyNonAlignedActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyNonAlignedActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TaxonomyAlignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TechnicalScreeningCriteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TechnicalScreeningCriteria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TourismSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TourismSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EnvironmentalObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionalActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionalActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ActivityType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransportSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteManagementSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteManagementSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WastePrevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WastePrevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteManagementSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteRecycling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteRecycling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteManagementSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteReuse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteReuse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#ManifacturingSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WasteManagementSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#PollutionPreventionAndReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#TransitionToACircularEconomy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WaterEfficiencyImprovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WaterEfficiencyImprovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicActivity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EngineeringSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#belongsToSector"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WaterSector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#hasActivityType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#NeitherEnablingNorTransitionalActivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#makesSubstantialContributionTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#SustainableUseAndProtectionOfWaterAndMarineResources"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WaterSector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#WaterSector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/federicolucarelli/ontologies/2026/0/eu-taxonomy-formalization#EconomicSector"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
